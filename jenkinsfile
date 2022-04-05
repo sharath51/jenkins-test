@@ -1,0 +1,21 @@
+node {
+
+    stage("checkout") {
+        checkout scm
+    }
+
+    def mvn_settings = readFile "resource/settings.xml"
+
+    stage("test") {
+        container('maven') {
+                 sh """
+                     mkdir -p ~/.m2
+                     echo '${mvn_settings}' > ~/.m2/settings.xml
+                     ls -lha ~/.m2
+
+                     mvn -v
+                     mvn clean verify
+
+        } }
+}
+        
