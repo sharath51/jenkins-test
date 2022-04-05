@@ -1,9 +1,8 @@
 node {
-
-    stage("checkout") {
+       stage("checkout") {
         checkout scm
     }
-
+    def mvn_settings = load "resource/settings.xml"
     stage("test") 
          {
                  sh """
@@ -13,6 +12,7 @@ node {
 
                      mvn -v
                      mvn clean verify
+                """
 
         } 
 }
