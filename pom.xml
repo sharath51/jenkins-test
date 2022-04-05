@@ -19,8 +19,7 @@
         <groovy.core.version>2.4.11</groovy.core.version>
         <groovy.gmaven.pluginVersion>1.6.1</groovy.gmaven.pluginVersion>
         <google.guava.version>20.0</google.guava.version>
-        <sourceVersion>1.8</sourceVersion>
-        <targetVersion>1.8</targetVersion>
+        <maven.compiler.release>8</maven.compiler.release>
 
         <jenkins-spock.version>2.0.0</jenkins-spock.version>
         <jenkins.version>2.102</jenkins.version>
@@ -232,6 +231,14 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
             </plugin>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-compiler-plugin</artifactId>
+               <version>3.8.0</version>
+               <configuration>
+                 <release>8</release>
+                     </configuration>
+           </plugin>
         </plugins>
         <testResources>
             <testResource>
