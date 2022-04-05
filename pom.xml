@@ -24,15 +24,13 @@
         <jenkins.version>2.102</jenkins.version>
         <jenkins.servlet.version>3.1.0</jenkins.servlet.version>
         <jenkins.workflow.cps.version>2.36</jenkins.workflow.cps.version>
-<<<<<<< HEAD
         <jenkins.workflow.basic.steps.version>2.6</jenkins.workflow.basic.steps.version>
-=======
+
         <jenkins.workflow.step.version>2.10</jenkins.workflow.step.version>
         <jenkins.workflow.basic.steps.version>2.6</jenkins.workflow.basic.steps.version>
         <jenkins.workflow.durable.task.steps.version>2.21</jenkins.workflow.durable.task.steps.version>
         <jenkins.pipeline.stage.step.version>2.3</jenkins.pipeline.stage.step.version>
         <jenkins.git.version>3.9.1</jenkins.git.version>
->>>>>>> 95688a2ddd9b2b248e1e526ec09d52f030bde5b1
 
         <junit.version>4.12</junit.version>
         <junit.plugin.version>1.24</junit.plugin.version>
