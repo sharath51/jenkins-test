@@ -4,8 +4,6 @@ node {
         checkout scm
     }
 
-    def mvn_settings = readFile "resource/settings.xml"
-
     stage("test") 
          {
                  sh """
