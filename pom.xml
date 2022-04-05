@@ -70,12 +70,24 @@
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                <groupId>org.connectbot.jbcrypt</groupId>
+                <artifactId>jbcrypt</artifactId>
+                </exclusion>
+            </exclusions>   
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.main</groupId>
             <artifactId>jenkins-core</artifactId>
             <version>${jenkins.version}</version>
             <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                <groupId>org.connectbot.jbcrypt</groupId>
+                <artifactId>jbcrypt</artifactId>
+                </exclusion>
+            </exclusions>   
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins.workflow</groupId>
