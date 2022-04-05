@@ -6,8 +6,8 @@ node {
 
     def mvn_settings = readFile "resource/settings.xml"
 
-    stage("test") {
-        container('maven') {
+    stage("test") 
+         {
                  sh """
                      mkdir -p ~/.m2
                      echo '${mvn_settings}' > ~/.m2/settings.xml
@@ -16,6 +16,8 @@ node {
                      mvn -v
                      mvn clean verify
 
-        } }
+        } 
 }
+
+         
         
