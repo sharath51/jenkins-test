@@ -10,7 +10,7 @@ node {
                      ls -lha ~/.m2
 
                      mvn -v
-                     mvn clean verify
+                     mvn clean verify -X
                 """
 
         } 
